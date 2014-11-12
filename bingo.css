@@ -1,3 +1,11 @@
 #numero_actual{
 	font-size: 3em;
 }
+
+.numero_rojo{
+	background-color:red;
+}
+
+.numero_amarillo{
+	background-color:yellow;
+}

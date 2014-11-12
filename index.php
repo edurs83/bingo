@@ -55,7 +55,14 @@
 							$k = $j*10 + $i + 1;
 						else
 							$k = $j*10 + $i;
+							if (!in_array($k, $_SESSION['numeros']))
 							echo '<td>'.$k.'</td>';
+							else {
+								if ($k == $_SESSION['x'])
+									echo '<td class="numero_rojo">'.$k.'</td>';
+								else
+									echo '<td class="numero_amarillo">'.$k.'</td>';
+							}
 					}
 				}
 					echo '</tr>';	
